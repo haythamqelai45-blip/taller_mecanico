@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Mecánico - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Taller Mecánico</div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="shop.html">Tienda</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-full-width">
+        <!-- Fondo con imagen y formulario flotante -->
+        <div class="contact-page-wrapper contact-bg">
+            <div class="contact-overlay"></div> <!-- Capa oscura -->
+
+            <div class="contact-container-floating">
+                <h1 class="section-title mb-1">Contacta con Nosotros</h1>
+                <p class="text-center mb-2">Estamos aquí para ayudarte. Rellena el formulario y te responderemos pronto.
+                </p>
+
+                <form action="#" method="POST">
+                    <!-- Campo Nombre -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <!-- Solo letras y espacios -->
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required
+                            pattern="[a-zA-Z ]+">
+                        <small class="text-small">Solo letras y espacios.</small>
+                    </div>
+
+                    <!-- Campo Email -->
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <!-- Formato de email estándar -->
+                        <input type="email" id="email" name="email" placeholder="Ej: juan@email.com" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}">
+                    </div>
+
+                    <!-- Campo Teléfono -->
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <!-- 9 dígitos exactos -->
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678" required
+                            pattern="[0-9]{9}">
+                        <small class="text-small">9 dígitos numéricos.</small>
+                    </div>
+
+                    <!-- Campo Asunto -->
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="cita">Pedir Cita</option>
+                            <option value="presupuesto">Solicitar Presupuesto</option>
+                            <option value="informacion">Información General</option>
+                            <option value="reclamacion">Reclamación</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo Mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Describe tu consulta..." required
+                            minlength="10"></textarea>
+                    </div>
+
+                    <!-- Botón Enviar -->
+                    <button type="submit" class="btn btn-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <p>Taller comprometido con la calidad y satisfacción. Más de 25 años de experiencia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="shop.html">Tienda</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>📍 Calle de Serrano 3, Madrid</li>
+                    <li>📞 +34 912 345 678</li>
+                    <li>✉️ admin@tallermecanico.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Taller Mecánico. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>
